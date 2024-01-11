@@ -6,6 +6,7 @@ pipeline{
        script{
         sh """
         dotnet clean
+        dotnet restore
         dotnet build
         """
       }
